@@ -5,7 +5,7 @@ import rehypeKatex from 'rehype-katex';
 // For an organization repository named LICAD-NU.github.io, keep base: '/'.
 // For a project repository named YOUR_REPO, set base: '/YOUR_REPO/'.
 export default defineConfig({
-  site: 'https://LICAD-NU.github.io',
+  site: 'https://ICAD-LAB-NU.github.io',
   base: '/',
   markdown: { remarkPlugins: [remarkMath], rehypePlugins: [rehypeKatex] },
 });
