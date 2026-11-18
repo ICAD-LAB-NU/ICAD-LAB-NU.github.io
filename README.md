@@ -105,7 +105,7 @@ npm install
 npm run build
 ```
 
-GitHub Pages URL: https://LICAD-NU.github.io/
+GitHub Pages URL: https://ICAD-LAB-NU.github.io/
 
 ## Funded projects (updated November 2026)
 
