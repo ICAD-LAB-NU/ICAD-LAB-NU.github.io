@@ -1,5 +1,5 @@
 ---
-photo: "/images/team/placeholder-person.svg"
+photo: "/images/team/aiym-kuralova.jpg"
 name: "Aiym Kuralova"
 role: "B.Sc. Student"
 group: research
