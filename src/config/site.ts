@@ -1,6 +1,6 @@
 export const SITE = {
-  name: 'Laboratory for Intelligent Control & Applied Dynamics',
-  shortName: 'LICAD',
+  name: 'Intelligent Control & Applied Dynamics LAB',
+  shortName: 'ICAD LAB NU',
   institution: 'School of Computing & Artificial Intelligence, Nazarbayev University',
   location: 'Astana, Kazakhstan',
   tagline: 'Mathematics that shapes intelligent, resilient systems.',
