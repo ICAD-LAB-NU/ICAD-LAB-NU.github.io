@@ -9,5 +9,4 @@ email: "aiym.kuralova@nu.edu.kz"
 affiliation: "Nazarbayev University"
 authorAliases: ["A Kuralova", "Aiym Kuralova"]
 ---
-
-Lead researcher and undergraduate student. Research description to be confirmed.
+Research Assistant and undergraduate student.
