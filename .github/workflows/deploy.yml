@@ -1,5 +1,5 @@
 
-name: Deploy LICAD Astro Website
+name: Deploy ICAD LAB Astro Website
 
 on:
   push:
