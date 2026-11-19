@@ -29,4 +29,4 @@ keywords: ["Data", "Stability", "Seismic Exploration", "Inverse Problems"]
 
 Data, Stability, Seismic Exploration, Inverse Problems
 
-*Project details supplied for the LICAD website; descriptions and outcomes can be expanded following PI approval.*
+*Project details supplied for the ICAD website; descriptions and outcomes can be expanded following PI approval.*

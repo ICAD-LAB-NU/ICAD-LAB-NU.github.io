@@ -39,4 +39,4 @@ keywords: ["Kazakhstan", "Healthcare Data", "Electronic Health System", "Mortali
 
 Kazakhstan, Healthcare Data, Electronic Health System, Mortality
 
-*Project details supplied for the LICAD website; descriptions and outcomes can be expanded following PI approval.*
+*Project details supplied for the ICAD website; descriptions and outcomes can be expanded following PI approval.*

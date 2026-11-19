@@ -28,4 +28,4 @@ keywords: ["Neural Networks", "Synchronization", "Control", "Cryptography", "Mar
 
 Neural Networks, Synchronization, Control, Cryptography, Markov Switched Control
 
-*Project details supplied for the LICAD website; descriptions and outcomes can be expanded following PI approval.*
+*Project details supplied for the ICAD website; descriptions and outcomes can be expanded following PI approval.*

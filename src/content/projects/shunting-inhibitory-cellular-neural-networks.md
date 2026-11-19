@@ -29,4 +29,4 @@ keywords: ["Neural Networks", "Synchronization", "Control", "Fuzzy Logic", "Time
 
 Neural Networks, Synchronization, Control, Fuzzy Logic, Time-Varying Delay
 
-*Project details supplied for the LICAD website; descriptions and outcomes can be expanded following PI approval.*
+*Project details supplied for the ICAD website; descriptions and outcomes can be expanded following PI approval.*

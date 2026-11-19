@@ -31,4 +31,4 @@ keywords: ["Tumors", "Growth", "Glioblastoma Multiforme", "Travelling Waves"]
 
 Tumors, Growth, Glioblastoma Multiforme, Travelling Waves
 
-*Project details supplied for the LICAD website; descriptions and outcomes can be expanded following PI approval.*
+*Project details supplied for the ICAD website; descriptions and outcomes can be expanded following PI approval.*
