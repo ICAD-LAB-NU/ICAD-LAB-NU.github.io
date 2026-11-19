@@ -23,49 +23,49 @@ const counts=(field:'year'|'type'|'area',value:string|number)=>papers.filter(p=>
 const countOpen=papers.filter(p=>p.data.openAccess===true).length;
 const countCited=papers.filter(p=>typeof p.data.citationCount==='number').length;
 ---
-<BaseLayout title="Publications" description="Complete supplied LICAD bibliography, searchable and organized by topic, year, and publication type.">
-  <section class="page-hero compact"><div class="container"><span class="eyebrow eyebrow-light">LICAD · RESEARCH OUTPUT</span><h1>Our <em>publications.</em></h1><p>Browse the supplied bibliography and explore the researchers behind each publication.</p></div></section>
-  <section class="section licad-publications-section"><div class="container">
-    <div class="licad-bib-header"><div><span class="eyebrow">PUBLICATION LIBRARY</span><h2>Research across disciplines</h2></div><div class="licad-total"><strong>{papers.length}</strong><span>supplied records</span></div></div>
-    <div class="licad-filter-groups" aria-label="Publication filters">
-      <div class="licad-filter-row"><span class="licad-filter-label">SHOW</span>
-        <button class="licad-pill is-selected" data-group="team" data-value="all" type="button">All ({papers.length})</button>
-        <button class="licad-pill" data-group="team" data-value="pi" type="button">PI coauthor</button>
-        <button class="licad-pill" data-group="team" data-value="member" type="button">LICAD coauthors</button>
-        {countOpen>0&&<button class="licad-pill" data-group="team" data-value="oa" type="button">Open access ({countOpen})</button>}
+<BaseLayout title="Publications" description="Complete supplied ICAD bibliography, searchable and organized by topic, year, and publication type.">
+  <section class="page-hero compact"><div class="container"><span class="eyebrow eyebrow-light">ICAD · RESEARCH OUTPUT</span><h1>Our <em>publications.</em></h1><p>Browse the supplied bibliography and explore the researchers behind each publication.</p></div></section>
+  <section class="section icad-publications-section"><div class="container">
+    <div class="icad-bib-header"><div><span class="eyebrow">PUBLICATION LIBRARY</span><h2>Research across disciplines</h2></div><div class="icad-total"><strong>{papers.length}</strong><span>supplied records</span></div></div>
+    <div class="icad-filter-groups" aria-label="Publication filters">
+      <div class="icad-filter-row"><span class="icad-filter-label">SHOW</span>
+        <button class="icad-pill is-selected" data-group="team" data-value="all" type="button">All ({papers.length})</button>
+        <button class="icad-pill" data-group="team" data-value="pi" type="button">PI coauthor</button>
+        <button class="icad-pill" data-group="team" data-value="member" type="button">ICAD coauthors</button>
+        {countOpen>0&&<button class="icad-pill" data-group="team" data-value="oa" type="button">Open access ({countOpen})</button>}
       </div>
-      <div class="licad-filter-row"><span class="licad-filter-label">TYPE</span>
-        <button class="licad-pill is-selected" data-group="type" data-value="all" type="button">All types ({papers.length})</button>
-        {types.map(t=><button class="licad-pill" data-group="type" data-value={t} type="button">{t} ({counts('type',t)})</button>)}
+      <div class="icad-filter-row"><span class="icad-filter-label">TYPE</span>
+        <button class="icad-pill is-selected" data-group="type" data-value="all" type="button">All types ({papers.length})</button>
+        {types.map(t=><button class="icad-pill" data-group="type" data-value={t} type="button">{t} ({counts('type',t)})</button>)}
       </div>
-      <div class="licad-filter-row"><span class="licad-filter-label">AREA</span>
-        <button class="licad-pill is-selected" data-group="area" data-value="all" type="button">All areas</button>
-        {areas.map(a=><button class="licad-pill" data-group="area" data-value={a} type="button">{a} ({counts('area',a)})</button>)}
+      <div class="icad-filter-row"><span class="icad-filter-label">AREA</span>
+        <button class="icad-pill is-selected" data-group="area" data-value="all" type="button">All areas</button>
+        {areas.map(a=><button class="icad-pill" data-group="area" data-value={a} type="button">{a} ({counts('area',a)})</button>)}
       </div>
-      <div class="licad-filter-row"><span class="licad-filter-label">YEAR</span>
-        <button class="licad-pill is-selected" data-group="year" data-value="all" type="button">All years</button>
-        {years.map(y=><button class="licad-pill" data-group="year" data-value={y} type="button">{y} ({counts('year',y)})</button>)}
+      <div class="icad-filter-row"><span class="icad-filter-label">YEAR</span>
+        <button class="icad-pill is-selected" data-group="year" data-value="all" type="button">All years</button>
+        {years.map(y=><button class="icad-pill" data-group="year" data-value={y} type="button">{y} ({counts('year',y)})</button>)}
       </div>
     </div>
-    <div class="licad-bib-tools">
-      <label class="licad-search-wrap"><span class="sr-only">Search paper titles and authors</span><input id="licad-paper-search" type="search" placeholder="Search title, author, journal, topic…" autocomplete="off"/></label>
-      <span class="licad-sort-label">Sort</span>
-      <button class="licad-sort is-selected" data-sort="newest" type="button">Newest</button>
-      <button class="licad-sort" data-sort="oldest" type="button">Oldest</button>
-      {countCited===papers.length&&countCited>0&&<button class="licad-sort" data-sort="cited" type="button">Most cited</button>}
-      <span id="licad-visible-count" class="licad-visible-count">{papers.length} of {papers.length}</span>
+    <div class="icad-bib-tools">
+      <label class="icad-search-wrap"><span class="sr-only">Search paper titles and authors</span><input id="icad-paper-search" type="search" placeholder="Search title, author, journal, topic…" autocomplete="off"/></label>
+      <span class="icad-sort-label">Sort</span>
+      <button class="icad-sort is-selected" data-sort="newest" type="button">Newest</button>
+      <button class="icad-sort" data-sort="oldest" type="button">Oldest</button>
+      {countCited===papers.length&&countCited>0&&<button class="icad-sort" data-sort="cited" type="button">Most cited</button>}
+      <span id="icad-visible-count" class="icad-visible-count">{papers.length} of {papers.length}</span>
     </div>
-    <div class="licad-publication-list" id="licad-publication-list">{papers.map(p=><PublicationCard paper={p} people={people}/>)}</div>
-    <p class="licad-empty" id="licad-empty" hidden>No papers match these filters. Try a different search or category.</p>
-    <p class="licad-bib-note">Bibliography imported from the user-supplied reference file. Research-area labels are automatically inferred from titles when no area is provided. Citation counts and open-access labels appear only when the corresponding metadata is supplied; missing DOI links are not invented. Author portraits link to LICAD profiles.</p>
+    <div class="icad-publication-list" id="icad-publication-list">{papers.map(p=><PublicationCard paper={p} people={people}/>)}</div>
+    <p class="icad-empty" id="icad-empty" hidden>No papers match these filters. Try a different search or category.</p>
+    <p class="icad-bib-note">Bibliography imported from the user-supplied reference file. Research-area labels are automatically inferred from titles when no area is provided. Citation counts and open-access labels appear only when the corresponding metadata is supplied; missing DOI links are not invented. Author portraits link to ICAD profiles.</p>
   </div></section>
 </BaseLayout>
 <script>
-  const records=Array.from(document.querySelectorAll<HTMLElement>('.licad-paper'));
-  const parent=document.querySelector<HTMLElement>('#licad-publication-list');
-  const search=document.querySelector<HTMLInputElement>('#licad-paper-search');
-  const counter=document.querySelector<HTMLElement>('#licad-visible-count');
-  const empty=document.querySelector<HTMLElement>('#licad-empty');
+  const records=Array.from(document.querySelectorAll<HTMLElement>('.icad-paper'));
+  const parent=document.querySelector<HTMLElement>('#icad-publication-list');
+  const search=document.querySelector<HTMLInputElement>('#icad-paper-search');
+  const counter=document.querySelector<HTMLElement>('#icad-visible-count');
+  const empty=document.querySelector<HTMLElement>('#icad-empty');
   const selected:{[key:string]:string}={team:'all',type:'all',area:'all',year:'all'};
   let sort='newest';
   function update(){
@@ -89,12 +89,12 @@ const countCited=papers.filter(p=>typeof p.data.citationCount==='number').length
     });
     for(const record of ordered)parent?.append(record);
   }
-  document.querySelectorAll<HTMLButtonElement>('.licad-pill').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll<HTMLButtonElement>('.icad-pill').forEach(btn=>btn.addEventListener('click',()=>{
     const group=btn.dataset.group||'',value=btn.dataset.value||'all';selected[group]=value;
-    document.querySelectorAll<HTMLButtonElement>(`.licad-pill[data-group="${group}"]`).forEach(item=>item.classList.toggle('is-selected',item===btn));update();
+    document.querySelectorAll<HTMLButtonElement>(`.icad-pill[data-group="${group}"]`).forEach(item=>item.classList.toggle('is-selected',item===btn));update();
   }));
-  document.querySelectorAll<HTMLButtonElement>('.licad-sort').forEach(btn=>btn.addEventListener('click',()=>{
-    sort=btn.dataset.sort||'newest';document.querySelectorAll('.licad-sort').forEach(item=>item.classList.toggle('is-selected',item===btn));update();
+  document.querySelectorAll<HTMLButtonElement>('.icad-sort').forEach(btn=>btn.addEventListener('click',()=>{
+    sort=btn.dataset.sort||'newest';document.querySelectorAll('.icad-sort').forEach(item=>item.classList.toggle('is-selected',item===btn));update();
   }));
   search?.addEventListener('input',update);
 </script>
