@@ -1,7 +1,7 @@
-# LICAD Website — Deployment Checklist
+# ICAD Website — Deployment Checklist
 
-- Repository: `https://github.com/LICAD-NU/LICAD-NU.github.io`
-- URL: `https://LICAD-NU.github.io/`
+- Repository: `https://github.com/ICAD-NU/ICAD-NU.github.io`
+- URL: `https://ICAD-NU.github.io/`
 - Workflow: `.github/workflows/deploy.yml`
 - Pages: **Settings → Pages → Source: GitHub Actions**
 - GitHub Desktop: **Commit to main**, then **Push origin**
@@ -16,4 +16,4 @@
 4. Check `package.json` contains the override `"mdast-util-gfm-table": "2.0.0"`.
 5. Check there is only one workflow: `.github/workflows/deploy.yml`.
 
-The earlier `npm E404` error originated in the dependency tree, not the LICAD content.
+The earlier `npm E404` error originated in the dependency tree, not the ICAD content.
