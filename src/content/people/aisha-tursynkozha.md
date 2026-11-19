@@ -9,4 +9,4 @@ authorAliases: ["A Tursynkozha", "Aisha Tursynkozha"]
 affiliation: "Assistant Professor, Astana IT University"
 ---
 
-Aisha completed her Ph.D. at LICAD (2021–2025) and is now an Assistant Professor at Astana IT University.
+Aisha completed her Ph.D. at  ICAD (2021–2025) and is now an Assistant Professor at Astana IT University.
