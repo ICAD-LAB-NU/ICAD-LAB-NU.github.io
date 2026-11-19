@@ -1,5 +1,5 @@
 ---
-title: "LICAD special session at the 15th ISAAC Congress"
+title: "ICAD special session at the 15th ISAAC Congress"
 date: 2025-07-21
 summary: "Our group organized the special session “Beyond Nodes and Edges: The Power of Complex Networks in Modeling Real-World Systems” at ISAAC 2025, hosted by Nazarbayev University."
 draft: false
