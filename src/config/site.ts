@@ -5,8 +5,8 @@ export const SITE = {
   location: 'Astana, Kazakhstan',
   tagline: 'Mathematics that shapes intelligent, resilient systems.',
   email: '', // TODO: Set the official public lab email after confirmation.
-  github: 'https://github.com/LICAD-NU',
-  description: 'LICAD studies the mathematical foundations and computational methods of intelligent control, nonlinear dynamics, data-driven decision making, and resilient networked systems.',
+  github: 'https://github.com/ICAD-NU',
+  description: 'ICAD studies the mathematical foundations and computational methods of intelligent control, nonlinear dynamics, data-driven decision making, and resilient networked systems.',
 };
 export const researchAreas = [
   { number:'01', title:'Nonlinear Dynamics & Control', icon:'◈', summary:'Stability, time-delay dynamics, hybrid systems, and rigorous Lyapunov methods.' },
