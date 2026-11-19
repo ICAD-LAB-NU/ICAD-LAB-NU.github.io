@@ -9,4 +9,4 @@ authorAliases: ["Al-Farabi"]
 affiliation: "Red Bull Headquarters"
 ---
 
-Former LICAD research assistant, now at Red Bull headquarters.
+Former ICAD research assistant, now at Red Bull headquarters.
