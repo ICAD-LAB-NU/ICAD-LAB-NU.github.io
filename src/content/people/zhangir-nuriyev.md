@@ -10,4 +10,4 @@ affiliation: "Nazarbayev University"
 authorAliases: ["Z Nuriyev", "Zhangir Nuriyev"]
 ---
 
-Ph.D. student at LICAD since 2023. Zhangir previously completed his M.Sc. at LICAD (2021–2023).
+Ph.D. student at ICAD since 2023. Zhangir previously completed his M.Sc. at ICAD (2021–2023).
