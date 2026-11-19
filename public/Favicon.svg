@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <!-- Top & Bottom Perimeter Text Paths -->
+    <path id="topArc" d="M 24,100 A 76,76 0 1,1 176,100" />
+    <path id="bottomArc" d="M 20,100 A 80,80 0 0,0 180,100" />
+  </defs>
+
+  <!-- Crisp Light Background Circle -->
+  <circle cx="100" cy="100" r="98" fill="#F4F5F7" />
+
+  <!-- SCAI Double Concentric Seal Rings -->
+  <circle cx="100" cy="100" r="93" fill="none" stroke="#344C98" stroke-width="2.5" />
+  <circle cx="100" cy="100" r="63" fill="none" stroke="#344C98" stroke-width="2" />
+  <circle cx="100" cy="100" r="59" fill="none" stroke="#344C98" stroke-width="1.5" />
+
+  <!-- Subtle Crosshair Dividers inside the inner ring -->
+  <line x1="100" y1="46" x2="100" y2="154" stroke="#344C98" stroke-width="1" stroke-opacity="0.25" />
+  <line x1="46" y1="100" x2="154" y2="100" stroke="#344C98" stroke-width="1" stroke-opacity="0.25" />
+
+  <!-- Top Curved Text -->
+  <text fill="#344C98" font-family="Arial, Helvetica, sans-serif" font-size="11.2" font-weight="600" letter-spacing="1.4">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">
+      INTELLIGENT CONTROL
+    </textPath>
+  </text>
+
+  <!-- Bottom Curved Text -->
+  <text fill="#344C98" font-family="Arial, Helvetica, sans-serif" font-size="10.8" font-weight="600" letter-spacing="1.2">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">
+      AND APPLIED DYNAMICS
+    </textPath>
+  </text>
+
+  <!-- ========================================================= -->
+  <!-- 1. TOP-LEFT (Royal Blue): CONTROL (Feedback Loop & Node)  -->
+  <!-- ========================================================= -->
+  <g transform="translate(55, 55)" fill="none" stroke="#344C98" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 8,14 H 28 V 30 H 12 V 19" />
+    <polyline points="9,22 12,18 15,22" />
+    <circle cx="8" cy="14" r="3.5" fill="#F4F5F7" />
+    <rect x="17" y="9" width="9" height="9" rx="1.5" fill="#344C98" stroke="none" />
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- 2. TOP-RIGHT (Lime Green): INTELLIGENT CONTROL & DYNAMICS -->
+  <!--    (Damped Dynamical Wave / Trajectory + Control Node)     -->
+  <!-- ========================================================= -->
+  <g transform="translate(107, 55)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Reference axis / equilibrium line -->
+    <line x1="5" y1="20" x2="31" y2="20" stroke="#344C98" stroke-width="1.6" stroke-dasharray="2.5 2.5" />
+    <!-- Stabilizing / damped dynamical trajectory -->
+    <path d="M 6,9 C 10,9 11,31 15,31 C 19,31 20,13 24,13 C 27,13 28,20 31,20" stroke="#A6CE39" stroke-width="2.8" />
+    <!-- Active intelligent control node on curve -->
+    <circle cx="24" cy="13" r="3.2" fill="#344C98" />
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- 3. BOTTOM-LEFT (Lime Green): MATH (Sigma Operator)        -->
+  <!-- ========================================================= -->
+  <g transform="translate(55, 107)" fill="none" stroke="#A6CE39" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 27,8 H 11 L 20,19 L 11,30 H 27" />
+    <circle cx="29" cy="19" r="2.5" fill="#344C98" stroke="none" />
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- 4. BOTTOM-RIGHT (Royal Blue): BIO (DNA Double Helix)      -->
+  <!-- ========================================================= -->
+  <g transform="translate(108, 106)" fill="none" stroke="#344C98" stroke-width="2.5" stroke-linecap="round">
+    <path d="M 10,6 C 10,14 26,14 26,21 C 26,28 10,28 10,36" />
+    <path d="M 26,6 C 26,14 10,14 10,21 C 10,28 26,28 26,36" stroke="#A6CE39" />
+    <line x1="12" y1="10" x2="24" y2="10" stroke-width="2" />
+    <line x1="13" y1="21" x2="23" y2="21" stroke-width="2" />
+    <line x1="12" y1="32" x2="24" y2="32" stroke-width="2" />
+  </g>
+</svg>
