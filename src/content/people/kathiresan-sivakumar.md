@@ -12,7 +12,7 @@ interests: ["Nonlinear dynamics", "Neural network synchronization", "Reinforceme
 authorAliases: ["S Kathiresan", "Kathiresan S", "Sivakumar Kathiresan", "Kathiresan Sivakumar", "K Sivakumar", "Sivakumar K"]
 ---
 
-Dr. Kathiresan Sivakumar (Ph.D., M.Sc.) completed his Ph.D. at LICAD (2022–2025). His research covers nonlinear dynamics, neural network synchronization, reinforcement learning, optimal control, secure communication, and image encryption.
+Dr. Kathiresan Sivakumar (Ph.D., M.Sc.) completed his Ph.D. at ICAD (2022–2025). His research covers nonlinear dynamics, neural network synchronization, reinforcement learning, optimal control, secure communication, and image encryption.
 
 **Expertise.** Lyapunov stability theory, event-triggered control, novel control techniques, cyber attacks, Takagi–Sugeno fuzzy systems, and reinforcement learning algorithms.
 
