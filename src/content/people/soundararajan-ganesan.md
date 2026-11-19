@@ -9,4 +9,4 @@ affiliation: "Kaunas University of Technology \u2014 Postdoctoral Fellow"
 authorAliases: ["G Soundararajan", "Soundararajan Ganesan", "G Ganesan"]
 ---
 
-Former LICAD postdoctoral researcher; now a postdoctoral fellow at Kaunas University of Technology.
+Former ICAD postdoctoral researcher; now a postdoctoral fellow at Kaunas University of Technology.
