@@ -9,4 +9,4 @@ authorAliases: ["O Maikenov", "Otankhan Maikenov"]
 affiliation: "Kaspi Bank"
 ---
 
-Otankhan completed his M.Sc. at LICAD (2022–2024) and now works at Kaspi Bank.
+Otankhan completed his M.Sc. at ICAD (2022–2024) and now works at Kaspi Bank.
