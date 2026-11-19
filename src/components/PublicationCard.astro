@@ -32,22 +32,22 @@ const theme=(()=>{
 })();
 const citationCount=typeof d.citationCount==='number'?d.citationCount:null;
 ---
-<article class="licad-paper" data-year={d.year} data-type={d.type} data-area={theme} data-pi={isPI?'yes':'no'} data-member={hasTeam?'yes':'no'} data-oa={d.openAccess===true?'yes':'no'} data-citations={citationCount??''} data-search={`${d.title} ${d.authors} ${d.venue} ${theme} ${d.year} ${highlighted.map((x:any)=>x.member.data.name).join(' ')}`.toLowerCase()}>
-  <h2 class="licad-paper-title"><a href={`${base}publications/${paper.id}/`}>{d.title}</a></h2>
-  <p class="licad-paper-authors">{matches.map(({name,member}:any,i:number)=><>{i>0?', ':''}{member?<a href={`${base}people/${member.id}/`} class="licad-author-link">{name}</a>:<span>{name}</span>}</>)}</p>
-  <p class="licad-paper-venue"><em>{d.venue}</em><span aria-hidden="true"> · </span>{d.year}</p>
-  {highlighted.length>0&&<div class="licad-paper-team" aria-label="LICAD coauthors">
+<article class="icad-paper" data-year={d.year} data-type={d.type} data-area={theme} data-pi={isPI?'yes':'no'} data-member={hasTeam?'yes':'no'} data-oa={d.openAccess===true?'yes':'no'} data-citations={citationCount??''} data-search={`${d.title} ${d.authors} ${d.venue} ${theme} ${d.year} ${highlighted.map((x:any)=>x.member.data.name).join(' ')}`.toLowerCase()}>
+  <h2 class="icad-paper-title"><a href={`${base}publications/${paper.id}/`}>{d.title}</a></h2>
+  <p class="icad-paper-authors">{matches.map(({name,member}:any,i:number)=><>{i>0?', ':''}{member?<a href={`${base}people/${member.id}/`} class="icad-author-link">{name}</a>:<span>{name}</span>}</>)}</p>
+  <p class="icad-paper-venue"><em>{d.venue}</em><span aria-hidden="true"> · </span>{d.year}</p>
+  {highlighted.length>0&&<div class="icad-paper-team" aria-label="ICAD coauthors">
     {highlighted.map(({member}:any)=>{
       const portrait=member.data.photo?.replace(/^\//,'')||'images/team/placeholder-person.svg';
-      return <a href={`${base}people/${member.id}/`} class="licad-paper-person" title={`Open ${member.data.name}'s profile`}><span class="licad-paper-portrait"><img src={`${base}${portrait}`} alt="" loading="lazy"/></span><span>{member.data.name.replace(/^Dr\.\s*/,'')}</span></a>;
+      return <a href={`${base}people/${member.id}/`} class="icad-paper-person" title={`Open ${member.data.name}'s profile`}><span class="icad-paper-portrait"><img src={`${base}${portrait}`} alt="" loading="lazy"/></span><span>{member.data.name.replace(/^Dr\.\s*/,'')}</span></a>;
     })}
   </div>}
-  <div class="licad-paper-bottom">
-    <span class="licad-tag licad-tag-kind">{d.type}</span>
-    {isPI&&<span class="licad-tag licad-tag-pi">PI coauthor</span>}
-    {hasTeam&&<span class="licad-tag licad-tag-team">LICAD authors</span>}
-    {d.openAccess===true&&<span class="licad-tag licad-tag-oa">Open access</span>}
-    {citationCount!==null&&<span class="licad-tag licad-tag-cites">Cited by {citationCount}</span>}
+  <div class="icad-paper-bottom">
+    <span class="icad-tag icad-tag-kind">{d.type}</span>
+    {isPI&&<span class="icad-tag icad-tag-pi">PI coauthor</span>}
+    {hasTeam&&<span class="icad-tag icad-tag-team">ICAD authors</span>}
+    {d.openAccess===true&&<span class="icad-tag icad-tag-oa">Open access</span>}
+    {citationCount!==null&&<span class="icad-tag icad-tag-cites">Cited by {citationCount}</span>}
     {d.doi&&<a href={`https://doi.org/${d.doi}`} rel="noopener noreferrer" target="_blank">DOI</a>}
     {d.url&&<a href={d.url} rel="noopener noreferrer" target="_blank">Paper</a>}
     <a href={`${base}publications/${paper.id}/`}>BibTeX / details</a>
