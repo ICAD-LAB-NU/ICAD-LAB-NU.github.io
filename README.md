@@ -1,6 +1,6 @@
-# LICAD · Academic Research Lab Website
+# ICAD · Academic Research Lab Website
 
-A responsive, multi-page **Astro + TypeScript + CSS + KaTeX** research laboratory site for the **Laboratory for Intelligent Control & Applied Dynamics (LICAD)** at **Nazarbayev University**. Design is independently implemented, inspired by modern academic group websites; no third-party site assets or source code were copied.
+A responsive, multi-page **Astro + TypeScript + CSS + KaTeX** research laboratory site for the **Intelligent Control & Applied Dynamics (ICAD) Lab** at **Nazarbayev University**. Design is independently implemented, inspired by modern academic group websites; no third-party site assets or source code were copied.
 
 ## Included
 - Home, research, people, alumni, **collaborators**, publications, project/theme pages, news, and contact.
@@ -29,7 +29,7 @@ npm run check
 ```
 
 ## Publish: recommended GitHub organization website
-1. Create a **GitHub organization** (e.g. `licad-nu`, only if available).
+1. Create a **GitHub organization** (e.g. `ICAD-nu`, only if available).
 2. Create a public repository **`YOUR_ORG.github.io`** inside that organization.
 3. Edit `astro.config.mjs`: replace `YOUR_ORG` with the actual organization account. Leave `base: '/'`.
 4. Edit `src/config/site.ts`: set the official lab contact email and GitHub organization URL when ready.
@@ -61,7 +61,7 @@ Copy `src/content/publications/_TEMPLATE.md.example` to `src/content/publication
 - [ ] Optionally add analytics and a custom domain.
 
 ## Repository license
-Code is available under the MIT license. Research content, names, portraits, and institutional branding are not automatically covered by that license. This starter uses an original typographic LICAD mark, not an official university logo.
+Code is available under the MIT license. Research content, names, portraits, and institutional branding are not automatically covered by that license. This starter uses an original typographic ICAD mark, not an official university logo.
 
 ## Build verification
 The source project was assembled without installing npm packages in the generation environment. Run `npm install && npm run check && npm run build` on a machine with npm registry access before deployment.
@@ -69,15 +69,15 @@ The source project was assembled without installing npm packages in the generati
 
 ## Full team bibliography and author portraits
 
-The initial publication section includes a **non-exhaustive seed dataset** of papers provided by the lab, with linked LICAD authors. The site supports unlimited publications and recognizes member names through `authorAliases` in `src/content/people/*.md`.
+The initial publication section includes a **non-exhaustive seed dataset** of papers provided by the lab, with linked ICAD authors. The site supports unlimited publications and recognizes member names through `authorAliases` in `src/content/people/*.md`.
 
-To import *all* papers from the PI and every current/former LICAD member, export their complete citations to a single BibTeX (`.bib`) or CSV (`.csv`) file (one publication per record; deduplicate shared papers). Run:
+To import *all* papers from the PI and every current/former ICAD member, export their complete citations to a single BibTeX (`.bib`) or CSV (`.csv`) file (one publication per record; deduplicate shared papers). Run:
 
 ```bash
-python3 scripts/import_publications.py path/to/licad-all-publications.csv
+python3 scripts/import_publications.py path/to/ICAD-all-publications.csv
 # OR for BibTeX:
 python3 -m pip install bibtexparser
-python3 scripts/import_publications.py path/to/licad-all-publications.bib
+python3 scripts/import_publications.py path/to/ICAD-all-publications.bib
 ```
 
 CSV columns: `title,authors,year,venue,doi,url,type,area`. The script skips records whose title+year slug already exists. Inspect imported records and correct dates, DOI links, and authors before pushing them. Add author name spellings to `authorAliases` so the website recognizes team coauthors automatically.
@@ -89,10 +89,10 @@ CSV columns: `title,authors,year,venue,doi,url,type,area`. The script skips reco
 
 ## Imported bibliography (101 records)
 
-The supplied BibTeX bibliography is saved as `bibliography/licad-supplied.bib` and its 101 records were converted into `src/content/publications/*.md`. This represents every entry in the uploaded source, **not** necessarily all publications by all LICAD members. Check metadata and author identity; add portraits in `public/images/team/` and set the matching `photo` field in each person profile.
+The supplied BibTeX bibliography is saved as `bibliography/ICAD-supplied.bib` and its 101 records were converted into `src/content/publications/*.md`. This represents every entry in the uploaded source, **not** necessarily all publications by all ICAD members. Check metadata and author identity; add portraits in `public/images/team/` and set the matching `photo` field in each person profile.
 
 
-## Complete LICAD deployment package (November 2026)
+## Complete ICAD deployment package (November 2026)
 
 This version includes 101 user-supplied BibTeX records; Cohen-style publication filters and coauthor portraits; nine supplied team photographs (AI-enhanced for six portraits); one placeholder for Aiym Kuralova; the public research, projects, collaborators, news, people, and contact pages; and GitHub Actions deployment. Bibliographic metadata has not been independently verified. Confirm consent for publication of member images before making the repository public.
 
@@ -121,7 +121,7 @@ to avoid any stale lockfile previously committed during manual uploads.
 
 To update the existing organization repository using GitHub Desktop:
 
-1. Clone `LICAD-NU/LICAD-NU.github.io` if you have not already.
+1. Clone `ICAD-NU/ICAD-NU.github.io` if you have not already.
 2. In Finder, open the cloned repository with **Repository → Show in Finder**.
 3. Remove stale project files in that cloned folder, but **never delete its hidden `.git` directory**.
 4. Copy the **contents** of this ZIP into the cloned repository root. Do not add an outer folder.
