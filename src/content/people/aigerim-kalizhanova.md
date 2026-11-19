@@ -10,4 +10,4 @@ affiliation: "Nazarbayev University"
 authorAliases: ["A Kalizhanova", "Aigerim Kalizhanova"]
 ---
 
-Ph.D. student at LICAD since 2024. Aigerim previously completed her M.Sc. at LICAD (2022–2024).
+Ph.D. student at ICAD  since 2024. Aigerim previously completed her M.Sc. at ICAD  (2022–2024).
