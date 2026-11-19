@@ -10,7 +10,7 @@ affiliation: "Nazarbayev University"
 authorAliases: ["A Kashkynbayev", "Ardak Kashkynbayev", "Kashkynbayev A"]
 ---
 
-The laboratory is led by Dr. Ardak Kashkynbayev, Professor of Mathematics at the School of Sciences and Humanities, Nazarbayev University.
+The ICAD lab is led by Dr. Ardak Kashkynbayev, Professor of Mathematics at the School of Sciences and Humanities, Nazarbayev University.
 
 ## Honours and recognition
 
