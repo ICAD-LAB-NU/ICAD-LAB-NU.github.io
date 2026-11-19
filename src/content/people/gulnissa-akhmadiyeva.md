@@ -8,4 +8,4 @@ order: 33
 affiliation: "Instructor, SDU University"
 ---
 
-Gulnissa completed her M.Sc. at LICAD (2020–2022) and is now an Instructor at SDU University.
+Gulnissa completed her M.Sc. at ICAD (2020–2022) and is now an Instructor at SDU University.
